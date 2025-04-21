@@ -1,0 +1,12 @@
+streamlit
+python-dotenv
+loguru
+pydantic
+requests
+ffmpeg-python  # 추가된 라인
+openai-whisper  # 로컬 Whisper 모델 사용
+openai  # OpenAI API 사용을 위한 패키지
+# TTS 라이브러리는 Dockerfile에서 직접 설치됨
+# numpy  # TTS에 필요한 의존성
+# scipy  # TTS에 필요한 의존성
+# soundfile  # 오디오 파일 처리를 위한 패키지

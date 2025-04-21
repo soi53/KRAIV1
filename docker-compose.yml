@@ -1,0 +1,20 @@
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/app/Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      # Mount the local data directory to the container's /data directory
+      - ./data:/data
+      # Mount the application code for live reloading during development (optional but recommended)
+      - ./app:/app
+    env_file:
+      - .env
+    # Explicitly set PYTHONPATH to include the /app directory
+    environment:
+      - PYTHONPATH=/app
+    # V1 focuses on CPU, GPU settings are omitted for now.
+    # No deploy/resources section for GPU needed in V1. 

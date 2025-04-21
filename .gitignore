@@ -118,9 +118,9 @@ venv.bak/
 *.sw?
 
 # Docker specific
-docker-compose.yml
-docker-compose.*.yml
-Dockerfile
+# docker-compose.yml  # 커밋에 포함되도록 주석 처리
+# docker-compose.*.yml  # 개발 환경별 설정은 제외 가능
+# Dockerfile  # 커밋에 포함되도록 주석 처리
 .dockerignore
 
 # Data files (usually large or generated)
@@ -129,7 +129,7 @@ Dockerfile
 *.avi
 *.wav
 *.srt
-*.txt
+# *.txt  # requirements.txt 파일이 포함되도록 주석 처리
 
 # Secrets
 *.env 
